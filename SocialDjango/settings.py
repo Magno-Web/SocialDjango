@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-y9dp&0rr_8jz3lw4w5!$x)xi8za3qhod=k#8&66$e1=zkt1078
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -78,8 +78,14 @@ WSGI_APPLICATION = 'SocialDjango.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    'ENGINE' : 'django.db.backends.sqlite3' ,
+    'NAME': 'railway',
+    'USER' : 'root',
+    'PASSWORD': 'F9XLU6grzuX7elxyXhBt',
+    'HOST' : 'containers-us-west-76.railway.app',
+    'PORT' : '7350',
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
